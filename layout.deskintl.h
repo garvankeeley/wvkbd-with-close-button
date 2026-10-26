@@ -193,8 +193,8 @@ static struct key keys_full[] = {
   {"]", "}", 1.0, Code, KEY_RIGHTBRACE},
   {"\\", "|", 1.0, Code, KEY_BACKSLASH},
   {"", "", 0.0, EndRow},
-
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+{"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
+  
   {"Caps", "Caps", 1.0, Mod, CapsLock, .scheme = 1},
   {"a", "A", 1.0, Code, KEY_A, &layouts[ComposeA]},
   {"s", "S", 1.0, Code, KEY_S, &layouts[ComposeS]},

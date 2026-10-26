@@ -26,6 +26,7 @@ enum key_type {
 	           // upon next keypress
 	EndRow,    // Incidates the end of a key row
 	Last,      // Indicated the end of a layout
+  HideKbd,
 };
 
 /* Modifiers passed to the virtual_keyboard protocol. They are based on

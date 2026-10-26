@@ -234,7 +234,7 @@ static struct key keys_full[] = {
   {"", "", 0.0, EndRow},
 
   {"⌨͕", "⌨͔", 1.5, NextLayer, .scheme = 1},
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+  {"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
   {",", "'", 1.0, Code, KEY_COMMA, &layouts[ComposeMath]},
   {"", "Tab", 4.0, Code, KEY_SPACE},
   {".", "?", 1.0, Code, KEY_DOT, &layouts[ComposePunctuation]},
@@ -308,7 +308,7 @@ static struct key keys_full_wide[] = {
   {"", "", 0.0, EndRow},
 
   {"⌨͕", "⌨͔", 1.5, NextLayer, .scheme = 1},
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+{"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
   {",", "'", 1.0, Code, KEY_COMMA, &layouts[ComposeMath]},
   {"", "Tab", 4.0, Code, KEY_SPACE},
   {".", "?", 1.0, Code, KEY_DOT, &layouts[ComposePunctuation]},
@@ -467,7 +467,7 @@ static struct key keys_simple[] = {
   {"", "", 0.0, EndRow},
 
   {"⌨͕", "⌨͔", 1.0, NextLayer, .scheme = 1},
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+{"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
   {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
   {"-", "_", 0.75, Code, KEY_MINUS, &layouts[ComposeMath]},
   {",", "'", 0.75, Code, KEY_COMMA, &layouts[ComposeBracket]},
@@ -563,7 +563,7 @@ static struct key keys_cyrillic[] = {
   {"", "", 0.0, EndRow},
 
   {"⌨͕", "⌨͔", 1.0, NextLayer, .scheme = 1},
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+{"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
   {",", "'", 1.0, Code, KEY_EQUAL, &layouts[ComposeMath]},
   {"", "Tab", 4.0, Code, KEY_SPACE},
   {".", "?", 1.0, Code, KEY_SLASH, &layouts[ComposePunctuation]},
@@ -628,7 +628,7 @@ static struct key keys_arabic[] = {
 
   {"⌨͕", "⌨͔", 1.0, NextLayer, .scheme = 1},
   {"⇧", "⇫", 1.0, Mod, Shift, .scheme = 1},
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+{"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
   {"", "Tab", 5.0, Code, KEY_SPACE},
   {"Enter", "Enter", 2.0, Code, KEY_ENTER, .scheme = 1},
 
@@ -1150,7 +1150,7 @@ static struct key keys_landscape[] = {
   {"", "", 0.0, EndRow},
 
   {"⌨͕", "⌨͔", 1.0, NextLayer, .scheme = 1},
-  {"Cmp", "Cmp", 1.0, Compose, .scheme = 1},
+{"Close", "Close", 1.0, HideKbd, 0, .scheme = 1},
   {"Ctr", "Ctr", 1.0, Mod, Ctrl, .scheme = 1},
   {",", "'", 1.0, Code, KEY_COMMA, &layouts[ComposeMath]},
   {"", "Tab", 5.0, Code, KEY_SPACE},

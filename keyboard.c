@@ -438,7 +438,10 @@ kbd_press_key(struct kbd *kb, struct key *k, uint32_t time)
     }
 
     switch (k->type) {
-    case Code:
+  	case HideKbd:
+    		raise(SIGUSR1); // Send signal to self to hide keyboard
+    		break;
+     case Code:
         if (k->code_mod) {
             zwp_virtual_keyboard_v1_key_mods(kb->vkbd, time, k->code_mod, WL_KEYBOARD_KEY_STATE_PRESSED);
             if (k->reset_mod) {
